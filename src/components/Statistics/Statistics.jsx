@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import style from "./statistics.module.css"
+import React from'react';
 
-function Statistics({ good, neutral, bad, total, positivePercentage }) {
+function Statistics(props) {
+    const { good, neutral, bad, total, positivePercentage } = props;
     return (
         <>
             <div className={style.statcontainer}>

@@ -4,7 +4,8 @@ import style from "./section.module.css"
 import React from 'react';
 
 
-function Section({ title, children }) {
+function Section(props) {
+  const { title, children } = props;
   return (
       <>
       <section className={style.feedback}>
